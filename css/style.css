@@ -77,13 +77,15 @@
 
    /* Body */
   
+   @media screen and (max-width: 1536px) and (min-height: 722px), {
    #center1 {
      position: relative;
      display: block;
      top: 93px;
      font-size: 13px;
    }
-
+}
+	   
    #center2 {
     position: relative;
     top: 93px;
