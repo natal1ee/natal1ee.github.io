@@ -1,0 +1,155 @@
+/* ===============================
+Color Palette:
+---------------
+White-ish color: rgba(229, 229, 229, 0.91)
+Navy blue: rgba(81, 98, 153, 0.6)
+Almost black: rgba(48, 43, 43, 0.91)
+/* ===============================
+
+/* General */
+
+html {
+    min-height: 565px;
+    overflow: hidden; /* Hides scrollbars*/
+  }
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+/* Container holding the image and the text - used to put the text on the image */
+  
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: 5px;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    color: rgba(48, 43, 43, 0.91);
+  }
+
+/* Typography */
+
+body {
+    font-family: 'Shadows Into Light', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+	  text-rendering: optimizeLegibility;
+   } 
+
+
+/* Header */
+
+a {
+    color: rgba(229, 229, 229, 0.91);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #516299;
+    text-decoration: underline;
+}
+
+nav.navbar {
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+    position: relative;
+    top: 26px;
+    left: -15px;
+    font-size: 18px;
+    z-index: 1; /*Made links clickable!*/
+}
+
+.navbar ul li {
+    display: inline-block; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+
+h1 {
+    color: rgba(229, 229, 229, 0.91);
+    font-size: 28px;
+ }
+
+div.contact {
+    position: relative;
+    top: 11px;
+}
+
+div.abtcontact { /* Makes the background "box" behind the text */
+    background-color: rgba(255, 255, 255, 0.6);
+
+    width: 1180px;
+    border-top: 4px solid rgba(81, 98, 153, 0.6);
+    padding: 50px;
+    padding-bottom: 337px;
+    margin: 0px; /* Assisted in hiding surprise scrollbar */
+
+    /* Positioned the bg + text so it didn't overlap under the sides of the screen, made some words unviewable */
+    position: relative;
+    left: -9px;
+    bottom: -3px; /* Made the white space at the bottom disappear */
+   }
+
+p {
+       font-size: 18px;
+   }
+    
+/* Img */
+
+/* the 'img.math-problems' and 'body' were used to make the background image the dark shade it is currently */
+    
+img.math-problems {
+    opacity: 0.6;
+  }
+  
+body {
+    background-color: black;
+  }
+ 
+/*The code snippet below was used to center and fit the math-problems background image onto the entire website background. Code ends after @media*/
+ 
+img.math-problems {
+   /* Set rules to fill background */
+   min-height: 100%;
+   min-width: 1024px;
+ 
+   /* Set up proportionate scaling */
+   width: 100%;
+   height: 640px;
+ 
+   /* Set up positioning */
+   position: fixed;
+   top: 0;
+   left: 0;
+   }
+ 
+   @media screen and (max-width: 1024px) { /* Specific to this particular image */
+img.bg {
+     left: 50%;
+     margin-left: -512px;   /* 50% */
+   }
+ }
+
+ /* Footer */
+
+ footer {
+  text-align: center;
+  text-align: -moz-center;
+  text-align: -webkit-center;
+  position: relative;
+  top: -37px;
+  left: -511px;
+  font-weight: bold;
+}
+
+footer p {
+  font-size: 16px;
+  color: rgba(48, 43, 43, 0.91);
+}
