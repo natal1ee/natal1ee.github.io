@@ -13,10 +13,11 @@
    =============================== */
 
    /* General */
-
+   @media screen and (min-height: 722px) {
    html {
      min-height: 565px;
    }
+}
 
    a {
     color: rgba(229, 229, 229, 0.91);
